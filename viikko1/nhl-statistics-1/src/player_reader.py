@@ -1,4 +1,4 @@
-import certifi
+
 from urllib import request
 from player import Player
 
