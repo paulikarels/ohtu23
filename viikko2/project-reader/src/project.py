@@ -9,7 +9,7 @@ class Project:
 
     def _stringify_dependencies(self, dependencies):
         return "\n- " +"\n- ".join(dependencies) + "\n" if len(dependencies) > 0 else "-"
-
+    #salainen toinen muutos
     def __str__(self):
         return (
             f"Name: {self.name}"
