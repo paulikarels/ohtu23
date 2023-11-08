@@ -19,3 +19,4 @@ class Project:
             f"\nDependencies: {self._stringify_dependencies(self.dependencies)}"
             f"\nDevelopment dependencies: {self._stringify_dependencies(self.dev_dependencies)}"
         )
+    # Jokin muutos
