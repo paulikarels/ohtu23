@@ -6,10 +6,12 @@ class Player:
         self.assists = dict['assists']
 
     
+    def get_score(self):
+        return self.goals+ self.assists
+    
     def __str__(self):
         return (
-            f"{self.name}"
-            f" team {self.team or '-'}"
-            f" goals {self.goals}"
-            f" assists {self.assists}"
+            f"{self.name:20}"
+            f" {self.team or '-'}"
+            f"  {self.goals} + {self.assists} = {self.get_score()}"
         )
