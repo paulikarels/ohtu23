@@ -39,8 +39,6 @@ class UserService:
         
         # toteuta loput tarkastukset tänne ja nosta virhe virhetilanteissa
 
-        if not (username and password):
-            raise UserInputError("Successfully registered")
         if (not username and password):
             raise UserInputError("Username taken!")
         if (len(username) < 3 and password):
