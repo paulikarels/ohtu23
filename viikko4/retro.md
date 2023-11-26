@@ -6,3 +6,5 @@ Start, Stop, Continue, More of, Less of Wheel - tekniikassa projektitiimi arvioi
 
 Glad, Sad, Mad - tekniikalla yksilöiden havainnot listataan kolmeen eri lohkoon (Glad, Sad, Mad). Kyseisillä lohkoilla tavoitellaan käsitellä sprintin aikana tuomista negatiivisista, positiivisista ja muista huomiosta tuomia havaintoja.  Projektitiimi käsittelevät asiat ja huomiot äänestämällä “tärkeimmät” huomiot ja käsittelevät ne saatavan ajan mukaisesti (~ 60 minuuttia).
 
+
+
