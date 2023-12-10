@@ -75,11 +75,14 @@ class HasFewerThan:
         return player_value < self._value
     
 class Or:
-    def __init__(self, *matchers, matcher):
+    def __init__(self, matcher, *matchers ):
         self.matcher = matcher
         self._matchers = matchers
 
     def test(self, player):
+        if not self.matcher.test(player):
+            return False
+        
         for matcher in self._matchers:
             if (matcher.test(player)):
                 return True
