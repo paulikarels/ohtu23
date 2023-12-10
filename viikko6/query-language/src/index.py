@@ -1,7 +1,7 @@
 import ssl
 from statistics import Statistics
 from player_reader import PlayerReader
-from matchers import And, HasAtLeast, PlaysIn, HasFewerThan, All
+from matchers import And, HasAtLeast, PlaysIn, HasFewerThan, All, Or
 ssl._create_default_https_context = ssl._create_unverified_context
 
 def main():
@@ -11,8 +11,12 @@ def main():
 
 
     matcher = And(
-        HasFewerThan(2, "goals"),
-        PlaysIn("NYR")
+        HasAtLeast(70, "points"),
+        Or(
+            PlaysIn("NYR"),
+            PlaysIn("FLA"),
+            PlaysIn("BOS")
+        )
     )
 
     for player in stats.matches(matcher):
